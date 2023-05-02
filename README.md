@@ -20,4 +20,4 @@ A simple JavaScript application that allows users to interact with dynamically g
  
  ## Screenshot
  
- ![image](https://i.imgur.com/I09pN3I.mp4)
+ ![image](https://i.imgur.com/AP30C0S.gif)
