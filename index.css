@@ -1,0 +1,110 @@
+/**
+ * Author: Armand Amores
+ * Student Id: 000315902
+ * Date: 05/03/2023
+ * File used to style html document and create animations
+ * for pictures
+* 
+*/
+    
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+ 
+header img {
+    margin: 0 auto;
+  }
+
+
+main {
+    height: 60%;
+}
+
+body {
+    background-image: url("images/background.jpg");
+    font-family: Copperplate;
+    font-weight:700;
+   
+}
+
+
+
+.card{
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+    animation: begin;
+    animation-duration: 3s;
+    
+}
+
+.card img {
+    background-color: blue;
+    border-radius: 15px;
+  }
+
+@keyframes begin {
+    
+    0%{
+        opacity: 0.2;
+        transform: rotateY(0deg);
+    }
+
+    
+    100%{
+        opacity: 1;
+        transform: rotateY(360deg) ;
+    }
+    
+    
+}
+
+
+
+@keyframes transformCard {
+    0%{ 
+        opacity: 0.0;
+        
+    }
+    10% {
+        opacity: 0.0; 
+        
+    }
+
+    50%{
+        opacity: 0.5;
+        
+    }
+
+    75%{
+        opacity: 0.8;
+    }
+
+    100%{ 
+        transform: rotateX(360deg) rotate(360deg) ;
+        opacity: 1;
+    }
+}
+
+.transformCard{
+    animation: transformCard 3s ease-in-out;
+}
+
+
+.btn-group-lg>.btn, .btn-lg {
+    --bs-btn-padding-x: 6rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+    
+  }
+
+
